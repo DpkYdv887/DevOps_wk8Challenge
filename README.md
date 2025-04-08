@@ -41,9 +41,9 @@ step 7:- admin username :-admin and password : admin
 
 This is the website:
 
-https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/wedding_website.png?raw=true
+![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/wedding_website.png)
 
 
 and the phpadmin database:
 
-https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/The%20phpadmin%20database.png?raw=true
+![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/The%20phpadmin%20database.png)
