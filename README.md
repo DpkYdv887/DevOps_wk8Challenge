@@ -35,13 +35,15 @@ step 5:- inside the project folder a file is wedding.sql is import in phpmyadmin
 
 step 6:- check your project http://localhost/wedding/
 
-
-
-This is the website:
-
-https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/The%20phpadmin%20database.png
 step 7:- admin username :-admin and password : admin
 
 
 
-# DevOps_wk8Challenge
+This is the website:
+
+https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/wedding_website.png?raw=true
+
+
+and the phpadmin database:
+
+https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/The%20phpadmin%20database.png?raw=true
