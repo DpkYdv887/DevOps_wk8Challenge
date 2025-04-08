@@ -46,7 +46,7 @@ step 7:- admin username :-admin and password : admin
 ![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/wedding_website.png)
 
 
-**and the phpadmin database:**
+**and the phpAdmin database:**
 
 
 ![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/The%20phpadmin%20database.png)
@@ -61,7 +61,7 @@ step 7:- admin username :-admin and password : admin
 ![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/Admin%20Portal.png)
 
 
-**and then the Admin logged in Page will appera:**
+**and then the Admin logged in Page will apper:**
 
 
 ![image alt](https://github.com/DpkYdv887/DevOps_wk8Challenge/blob/main/images/Admin%20Logged%20In%20.png)
