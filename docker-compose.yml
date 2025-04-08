@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    platform: linux/arm64/v8   # Specify ARM64 platform for MySQL
+    container_name: wedding_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # Root password for MySQL
+      MYSQL_DATABASE: wedding           # Database name (wedding)
+    ports:
+      - "3307:3306"                     # Expose MySQL to localhost
+    volumes:
+      - mysql_data:/var/lib/mysql       # Persist MySQL data across restarts
+      - ./wedding.sql:/docker-entrypoint-initdb.d/wedding.sql  # Import SQL file
+
+  phpmyadmin:
+    image: arm64v8/phpmyadmin:latest  # Use the latest version of PhpMyAdmin
+    platform: linux/arm64/v8   # Specify ARM64 platform for PhpMyAdmin
+    container_name: wedding_phpmyadmin
+    environment:
+      PMA_HOST: mysql                  # Connect PhpMyAdmin to MySQL container
+      MYSQL_ROOT_PASSWORD: rootpassword  # Same password as MySQL
+    ports:
+      - "8090:80"                       # PhpMyAdmin UI on localhost:8080
+
+  php:
+    build: .                             # Build the PHP container using the custom Dockerfile
+    platform: linux/arm64/v8   # Specify ARM64 platform for PHP container
+    container_name: wedding_web
+    ports:
+      - "8040:80"                       # PHP application will be accessible at http://localhost:8040
+    volumes:
+      - ./htdocs:/var/www/html          # Mount your project directory to the container
+
+volumes:
+  mysql_data:                           # Define volume for MySQL data persistence
